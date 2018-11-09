@@ -1,17 +1,20 @@
-CC=gcc
-FLAGS = -W -Wall -Wextra -Werror
-EXEC=libft.a
-SRC= 
+
+NAME = Libft.a
+CC = gcc
+FLAGS = -Wall -Wextra -Werror
+EXEC = exe
+
+SRC = 
 
 all: $(EXEC)
 
-make:
+$(EXEC):
 	$(CC) -o $(FLAGS) $(SRC)
 
 clean:
 	rm -rf *.o
 
 fclean: clean
-	rm -rf $(EXEC)
+	rm -rf $(NAME)
 
-re: fclean make
+re: fclean $(EXEC)

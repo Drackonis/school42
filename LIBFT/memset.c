@@ -1,4 +1,4 @@
-void	*memset(void *str, unsigned int c, size_t n)
+void	*memset(void *str, int c, size_t n)
 {
 	int	i;
 
