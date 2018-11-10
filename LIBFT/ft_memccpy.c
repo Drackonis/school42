@@ -23,6 +23,5 @@ int	main(int argc, char **argv)
 	char *str2 = argv[2];
 	ft_memccpy(str1, str2, 35, 5);
 	printf("%s",str1);
-
 	return (0);	
 }
